@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyPortfilio/static/css/main.fbf1b5f8.css",
-    "main.js": "/MyPortfilio/static/js/main.b9faf336.js",
+    "main.css": "/MyPortfilio/static/css/main.65bdec66.css",
+    "main.js": "/MyPortfilio/static/js/main.6a474017.js",
     "static/media/Screenshot_7.png": "/MyPortfilio/static/media/Screenshot_7.71b81417998fce5ff233.png",
     "static/media/Screenshot_9.png": "/MyPortfilio/static/media/Screenshot_9.74f6371251187da98718.png",
     "static/media/Screenshot_8.png": "/MyPortfilio/static/media/Screenshot_8.9c102f256f1c2414828c.png",
@@ -21,11 +21,11 @@
     "static/media/Vector2.png": "/MyPortfilio/static/media/Vector2.28db5bfd58081dd1df1b.png",
     "static/media/glasses.png": "/MyPortfilio/static/media/glasses.71d7c1b0ff0b870a9d7d.png",
     "index.html": "/MyPortfilio/index.html",
-    "main.fbf1b5f8.css.map": "/MyPortfilio/static/css/main.fbf1b5f8.css.map",
-    "main.b9faf336.js.map": "/MyPortfilio/static/js/main.b9faf336.js.map"
+    "main.65bdec66.css.map": "/MyPortfilio/static/css/main.65bdec66.css.map",
+    "main.6a474017.js.map": "/MyPortfilio/static/js/main.6a474017.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbf1b5f8.css",
-    "static/js/main.b9faf336.js"
+    "static/css/main.65bdec66.css",
+    "static/js/main.6a474017.js"
   ]
 }
