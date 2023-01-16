@@ -1,0 +1,167 @@
+@media (max-width:567px) {
+  .Navbar{
+    .navLeft{
+      .darkmode{
+        margin-left: 1rem !important;
+      }
+    }
+    .button{
+      position: absolute;
+      top: 110%;
+      right: 5%;
+      display: none;
+    }
+  }
+  .navRight{
+    justify-content: end !important;
+    .navlist{
+      right:  8% !important;
+      z-index: 8;
+      width: 250px;
+      ul li{
+        font-size: 1.5rem !important;
+      }
+      li:hover::after{
+        opacity: 1;
+        transform: translateX(0px);
+      }
+      li::after{
+        content: "\f015";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        font-size: 1.4rem;
+        top: 24%;
+        right: 5%;
+        background: none;
+        transform: rotate(0deg) translateX(-100px);
+        opacity: 0;
+        transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      li:nth-child(2)::after{
+        content: "\f2bb";
+      } li:nth-child(3)::after{
+        content: "\f3ed";
+      }li:nth-child(4)::after{
+        content: "\f2be";
+      }li:nth-child(5)::after{
+        content: "\f2ba";
+      }
+      ::after{
+        content: "";
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: var(--yellow);
+        position: absolute;
+        top: -4%;
+        right: 7%;
+        transform: rotate(45deg);
+      }
+    }
+    .togglemenu{
+      margin-left: 4rem ;
+    }
+  }
+  #intro{
+   transform: translateY(3rem);
+  }
+  .introname {
+    span:nth-child(1){
+      font-size: unset;
+      font-weight: 500;
+      font-family: cursive;
+    }
+    .introleftname{
+      font-size: unset;
+      font-weight: bold;
+      color: var(--orange);
+    }
+    .introbtn{
+      margin: .5rem 0px;
+    }
+    }
+    .introicon{
+      *{
+        transform: unset;
+      }
+    }
+    .introright{
+      transform:unset;
+    }
+    .blur{
+      display: none;
+    }
+    #Service{
+      flex-direction: column;
+      padding-top: 2rem;
+      position: unset;
+      .ServiceCards{
+        display: flex;
+        flex-wrap: wrap;
+        position: unset !important;
+          width: 100% !important;
+          justify-content: center;
+          .Card{
+            position: unset !important;
+            margin-top: 1.5rem;
+          }
+      }
+    }
+    //end service
+    .AboutContainer{
+      width: 80%;
+      .aboutinnerchild{
+        margin-top: 1rem;
+      }
+    }
+    .Worksright{
+      width: 100% !important;
+      transform:scale(.7) rotate(0deg) !important;
+    }
+    //contact start
+    #Contact{
+      width: 100%;
+      margin-top: 1rem;
+      flex-direction: column;
+      text-align: center;
+      *{
+        margin-top: 1rem;
+      }
+    }
+    //contact end
+    //Testimonial start
+  #Testimonial{
+    input {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      width: 30px ;
+      height: 30px ;
+    }
+  }
+    //Testimonial end
+    //Footer Start
+    #Footer{
+      .contactdetails{
+        position: absolute;
+        top: 48%;
+        left: 28%;
+        a{
+          font-size: 1.2rem;
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+        }
+        ul{ 
+          span{
+           font-size: 2rem !important;
+          }
+        }
+      }
+      p{
+        position: absolute;
+        padding:2rem;
+        left: 8% !important;
+      }
+    } 
+    //Footer end
+}

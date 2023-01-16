@@ -1,0 +1,70 @@
+@media (max-width:395px) {
+  .introright{
+    transform: scale(.6) translateX(-1rem) translateY(-3rem);
+  }
+  #intro .introleft .introicon{
+    width: unset !important;
+  }
+  .ServiceAwesome span:nth-child(1){
+    font-size: unset !important;
+  }
+  .Worksright{
+    .brand{
+      width: 250px !important;
+      height: 250px !important;
+    
+    .brandname{
+      position: absolute;
+      width: 100px !important;
+      height: 100px !important;
+    }
+    :nth-child(5){
+      top:75px !important;
+      left: 75px !important;
+     
+    }
+  }
+  #intro .introicon{
+    width: 100%;
+    transform: translateX(2rem) !important;
+  }
+  }
+  .portfoliocontainer{
+
+    div{
+      padding: .2rem;
+      min-width: 250px !important;
+      height: 100%;
+      border-radius: .5rem;
+    }
+  }
+  #portfolio .portfoliohead h2{
+    font-size: 1.5rem !important;
+  }
+  .contactdetails{
+    position: absolute;
+    top: 48%;
+    left: 0% !important;
+    a{
+      font-size: 1.2rem !important;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+    ul{ 
+      span{
+       font-size: 1.2rem !important;
+      }
+    }
+  }
+  //testimonial start
+  #Testimonial{
+    input {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      width: 25px !important;
+      height: 25px !important;
+    }
+  }
+  //testimonial end
+}

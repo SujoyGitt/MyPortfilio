@@ -1,0 +1,190 @@
+@media (max-width:767px) {
+  body{
+    text-align: center;
+  }
+  .togglemenu{
+    display: block !important;
+  }
+.Navbar{
+  position: relative;
+}
+    .navlist{
+      position: absolute;
+      width: 250px;
+      height: auto;
+      padding: 10px;
+      text-align: center;
+      top: 140%;
+      right: 14%;
+      border-radius: 15px;
+      background:linear-gradient(var(--yellow),var(--orange));
+      transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transform: scaleY(0) perspective(500px);
+      transform-origin: top;
+      opacity: 0;
+      ul{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+      
+        li{
+          list-style: none;
+          margin-top: 1.5rem;
+          font-size: 1.4rem !important;
+          margin-left: .6rem;
+          padding:.5rem 3rem;
+          color: var(--white) !important;
+          font-weight: 500;
+          border-radius: 2rem;
+          transition: .3s;
+          font-weight: 500;
+          position: relative;
+        }
+        li:hover{
+          background: var(--white);
+          color: var(--black) !important;
+        }
+        li:hover::after{
+          opacity: 1;
+          transform: translateX(10px);
+        }
+        li::after{
+          content: "\f015";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          font-size: 1.4rem;
+          top: 24%;
+          right: 5%;
+          background: none;
+          transform: rotate(0deg) translateX(-100px);
+          opacity: 0;
+          transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        a:nth-child(2) li::after{
+          content: "\f2bb";
+        } a:nth-child(3) li::after{
+          content: "\f3ed";
+        }a:nth-child(4) li::after{
+          content: "\f2be";
+        }a:nth-child(5) li::after{
+          content: "\f2ba";
+        }
+      }
+      ::after{
+        content: "";
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: var(--yellow);
+        position: absolute;
+        top: -4%;
+        right: 30%;
+        transform: rotate(45deg);
+      }
+    }
+    .toggleAdd{
+      transform: scaleY(1);
+      opacity: 1;
+    }
+    //intro start
+    #intro{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+        transform: translateY(3rem);
+      .introleft{
+        width:100% !important;
+        .introname{
+          .introleftname{
+            font-size: 3rem !important;
+        }
+        } 
+      } 
+      .introright{
+        width: 100% !important;
+        position: relative;
+        padding-right: 5rem;
+        img:nth-child(1){
+          position: absolute;
+          left: 5%;
+          transform: scale(.6) translateX(-35%) translateY(-15%) !important;
+        }
+        img:nth-child(2){
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          transform: scale(.5) translateX(-35%) translateY(-24%) rotate(-8deg) !important;
+        }
+        img:nth-child(3){
+          top: 10% !important;
+        }
+        img:nth-child(4){
+          position: absolute;
+          left: -10% !important;
+          top: -10% !important;
+          transform: scale(.5);
+        }
+        .floatingDiv{
+          left: 60%;
+          top: 10% !important;
+        }
+      }
+    }
+    //intro end
+
+    //service start
+    #Service{
+      flex-direction: column;
+      padding-top: 2rem;
+      .ServiceCards{
+        display: flex;
+        flex-wrap: wrap;
+          width: 100% !important;
+          .Card:nth-child(1){
+            top: 50% !important;
+            left: 0% !important;
+              }
+                 .Card:nth-child(2){
+            top: 0%;
+            left: 50% !important;
+              } 
+              .Card:nth-child(3){
+            top: 65% !important;
+            left: 46% !important;
+            }
+      }
+    }
+    //service end
+    // About start
+    #About{
+      margin-top: 2rem;
+    }
+    // About end
+    #Works{
+      flex-direction: column;
+      .Worksright{
+        margin-top: 2rem;
+      }
+    }
+    //service start
+    .main{
+      width: 100% !important;
+      height: 75vh;
+    }
+        //service end
+//portfolio start
+#portfolio{
+ margin-top: 1rem;     
+}
+}
+//portfolio end
+//Contact start
+#Contact{
+  width: 100% !important;
+  margin-top: 1rem;
+  input{
+    width: 100% !important;
+  }
+}
+//Contact start

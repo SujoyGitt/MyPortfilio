@@ -1,0 +1,46 @@
+@media (max-width:'992px') {
+
+  .introname {
+    span:nth-child(1){
+      font-size: 2.5rem !important;
+      font-weight: 500;
+      font-family: cursive;
+    }
+    .introleftname{
+      font-size: 4rem  !important;
+      font-weight: bold;
+      color: var(--orange);
+    }
+    .introbtn{
+      margin: 1rem 0px;
+    }
+    }
+    .introicon{
+      *{
+        transform: scale(.5) !important;
+      }
+    }
+    .introright{
+      transform: scale(.75);
+  }
+  .ServiceCards{
+    width: 78% !important;
+    .Card:nth-child(1){
+      top: 50% !important;
+      left: -10% !important;
+        }
+           .Card:nth-child(2){
+      top: 0%;
+      left: 45% !important;
+      
+        } .Card:nth-child(3){
+      top: 65% !important;
+      left: 42% !important;
+      
+        }
+  }
+  #Works .Worksright{
+    transform: scale(.75);
+  }
+   
+}
