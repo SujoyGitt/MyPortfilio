@@ -21,9 +21,11 @@ let Contact = ()=>{
   });
   let submitevent = ()=>{
     alert(`Your name is ${data.name}. Your email is ${data.email}. And you want to say me ${data.message} and you can within 24 hours.`);
-document.getElementById("name").value = "";
+    setTimeout(() => {
+      document.getElementById("name").value = "";
 document.getElementById("email").value = "";
-document.getElementById("message").value = "";
+document.getElementById("massage").value = "";
+    }, 3000);
   }
   let InputEvent = (event)=>{
     const{name,value} = event.target;
@@ -44,7 +46,7 @@ document.getElementById("message").value = "";
         <form ref={form} action="" onSubmit={sendEmail}  >
           <input type="text" id="name" name="name" placeholder="Name" value={data.name}  onChange={InputEvent}/>
           <input type="email" id="email" name="email" placeholder="Email" value={data.email}  onChange={InputEvent}/><br />
-          <textarea type="text" id="message" name="message" placeholder="Message" value={data.message}  onChange={InputEvent}/><br />
+          <textarea type="text" id="massage" name="message" placeholder="Message" value={data.message}  onChange={InputEvent}/><br />
           <button className="button" type="submit" value='Send'  onClick={submitevent}>Send</button>
         </form>
         <div className="blur"></div>
