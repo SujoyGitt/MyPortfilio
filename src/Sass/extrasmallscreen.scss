@@ -52,8 +52,11 @@ body{
     transform:scale(.6) !important;
   }
    //Footer Start
-   .contactdetails{
-    transform: translateY(.8rem) !important;
+
+    .contactdetails{
+      position: absolute;
+      top: 48%;
+      transform: translateX(-1rem);
     a{
       font-size: 1rem;
       color: rgb(255, 255, 255);

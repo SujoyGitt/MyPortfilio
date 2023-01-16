@@ -1,7 +1,7 @@
 let Works =()=>{
   window.addEventListener("scroll",()=>{
     let s = window.scrollY;
-    if (s > 1300 && s < 2000) {
+    if (s>1300) {
       document.querySelector('.Worksright').classList.add('brandadd');
     }else{
       document.querySelector('.Worksright').classList.remove('brandadd');
