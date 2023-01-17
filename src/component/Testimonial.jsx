@@ -6,50 +6,68 @@ import Profile5 from '../img/profile5.jpg';
 import Profile6 from '../img/profile6.jpg';
 
 let Testimonial = ()=>{
-    let Child = document.querySelector(".child");
-    var k = 1;
+  let Child = document.querySelector(".child");
+  console.log(Child)
+  var k = 1;
 let count = 0;
 setInterval(() => {
-    k = k + 1;
-    count += 16.67;
-    Child.style.transform =  `translateX(${-count}%)`;
+  k = k + 1;
+  count += 16.67;
+  if (Child) {
+    Child.style.transform = "translateX(" + "-" + count + "%" + ")";
     Child.style.transition = .3+"s";
-    if (count > 96) {
-        count = 0;
+  }
+  if (count > 96) {
+      count = 0;
+      if(Child){
         Child.style.transform = "translateX(" + "-" + count + "%" + ")";
-    Child.style.transition = 0+"s";
-    }
-   if (k > 6) {
-    k = 1;
-    document.querySelector(".i" + k).checked = true;
-
-   }
-    document.querySelector(".i" + k).checked = true;
-    // Child.style.transform=`translateX(-${count}%)`;
+        Child.style.transition = 0+"s";
+      }
+  }
+ if (k > 6) {
+  k = 1;
+  document.querySelector(".i" + k).checked = true;
+ }
+  document.querySelector(".i" + k).checked = true;
+  // Child.style.transform=`translateX(-${count}%)`;
 }, 3000);
+
 //indicator start
 
- let one = () => {
-  Child.style.transform = "translateX(0%)";
+let one = () => {
+  if(Child){
+    Child.style.transform = "translateX(0%)";
+  }
 };
 let two = () => {
-  Child.style.transform = "translateX(-16.67%)";
+  if(Child){
+Child.style.transform = "translateX(-16.67%)";
+}
 };
- let three = () => {
-  Child.style.transform = "translateX(-33.34%)";
+let three = () => {
+  if(Child){
+    Child.style.transform = "translateX(-33.34%)";
+  }
 };
- let four = () => {
-  Child.style.transform = "translateX(-50.1%)";
+let four = () => {
+  if(Child){
+    Child.style.transform = "translateX(-50.1%)";
+  }
 };
- let five = () =>{
-  Child.style.transform = "translateX(-66.68%)";
+let five = () =>{
+  if(Child){
+    Child.style.transform = "translateX(-66.68%)";
+  }
 };
- let six = () => {
-  Child.style.transform = "translateX(-83.35%)";
+let six = () => {
+  if(Child){
+    Child.style.transform = "translateX(-83.35%)";
+  }
 };
 
 //indicator end
 return(
+  
   <>
     <div id='Testimonial'>
         <div className="main">
@@ -134,6 +152,11 @@ return(
         <div className="blur right"></div>
     </div>
     </>
-  )
+  );
+
+
+
+
+
 }
 export default Testimonial;

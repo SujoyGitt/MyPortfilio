@@ -22,7 +22,7 @@ setInterval(() => {
         squire.remove();
     }, 45000);
 
-}, 1400);
+}, 1800);
 
   return(
     <>
