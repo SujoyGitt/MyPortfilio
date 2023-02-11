@@ -21,8 +21,7 @@ setInterval(() => {
     setTimeout(() => {
         squire.remove();
     }, 45000);
-
-}, 1800);
+}, 2000);
 
   return(
     <>

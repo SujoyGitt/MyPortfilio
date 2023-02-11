@@ -1,12 +1,9 @@
 
 import loading from './Spinner.png';
-
-setTimeout(() => {
-  let spinner = document.querySelector('.spinner');
-  spinner.remove();
-  console.log('spinner is remove')
-}, 2000);
-
+  setTimeout(() => {
+    let spinner = document.querySelector('.spinner');
+    spinner.remove();
+  }, 2000);
 let Spinner = (props)=> {
     return (
       <div className='spinner' style={props.onload ?  {"display":"none"}: {"display":"block"}}>

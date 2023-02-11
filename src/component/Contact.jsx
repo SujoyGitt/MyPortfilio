@@ -33,7 +33,7 @@ let Contact = ()=>{
       return{...previousData,[name]:value};
     })
   };
-//see  what is say users start
+//see  what is say users end
   return(
     <>
     <div id="Contact">
